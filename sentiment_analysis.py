@@ -1,10 +1,17 @@
+import os
+import pandas as pd
+import numpy as np
+from nltk import word_tokenize, sent_tokenize
+from googleapiclient.discovery import build
+from langdetect import detect, lang_detect_exception
+import regex
+from transformers import AutoModelForSequenceClassification
+from transformers import AutoTokenizer
+from scipy.special import softmax
 
 
-
-def sentiment_analysis(comments):
+def sentiment_analysis(comments, model_name):
     eng_comments = comments.loc[comments.Language == 'en', 'Comment'].tolist()
-
-    model_name = f"cardiffnlp/twitter-roberta-base-sentiment-latest"
     vectorizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSequenceClassification.from_pretrained(model_name)
     emotions = ['negative', 'neutral', 'positive']
@@ -24,5 +31,4 @@ def sentiment_analysis(comments):
             comments['Comment'] == comment,
             'Emotional'
         ] = emotions[index]
-
     return comments

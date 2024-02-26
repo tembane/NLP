@@ -3667,6 +3667,66 @@ url = "https://download.pytorch.org/whl/cu121"
 reference = "torch"
 
 [[package]]
+name = "torchaudio"
+version = "2.2.0+cu121"
+description = "An audio package for PyTorch"
+optional = false
+python-versions = "*"
+files = [
+    {file = "torchaudio-2.2.0+cu121-cp310-cp310-linux_x86_64.whl", hash = "sha256:db3cb79aadaa3ef63ff968f0ab2457681ad4f9f458c2af8d6579f1d4aff6632b"},
+    {file = "torchaudio-2.2.0+cu121-cp310-cp310-win_amd64.whl", hash = "sha256:f5181424ea9c01d4199d37ebc394040c96ca36836c6e3a9fb9d6af58d30d8ed0"},
+    {file = "torchaudio-2.2.0+cu121-cp311-cp311-linux_x86_64.whl", hash = "sha256:777158d60e6604f8985aa7df631fa6d4bf2fbe6be45827377f8a50b2e42a6425"},
+    {file = "torchaudio-2.2.0+cu121-cp311-cp311-win_amd64.whl", hash = "sha256:67a33d2066668a2754d9dd5d000419f60102dd17eff9803f9b0a5e1d9261f79d"},
+    {file = "torchaudio-2.2.0+cu121-cp312-cp312-linux_x86_64.whl", hash = "sha256:86cfe7808516070a76cb884ff64a04326df0c06461c0875e9ac727b1f69373b5"},
+    {file = "torchaudio-2.2.0+cu121-cp312-cp312-win_amd64.whl", hash = "sha256:318ef9c4df51bf3dcac496f1f46fb67777c6f3b203e0da52f4ea74a7afeced08"},
+    {file = "torchaudio-2.2.0+cu121-cp38-cp38-linux_x86_64.whl", hash = "sha256:3ce71e6cbfd05b5ceb288e7730aca008e1251909f83c1e57454579d2ae149c2a"},
+    {file = "torchaudio-2.2.0+cu121-cp38-cp38-win_amd64.whl", hash = "sha256:b3e5e7981662122f71d643c5c71209e0f13005980f94fd3aaca5498381722cf0"},
+    {file = "torchaudio-2.2.0+cu121-cp39-cp39-linux_x86_64.whl", hash = "sha256:3a9c301cd8cb07b137808e897b1b64caca9103590cad0ec6b42351366a9dc1ab"},
+    {file = "torchaudio-2.2.0+cu121-cp39-cp39-win_amd64.whl", hash = "sha256:c4fcede15106eaee2d6a97a4d8e81a077fb9f9fe53da2f91a7638de3bd81069c"},
+]
+
+[package.dependencies]
+torch = "2.2.0"
+
+[package.source]
+type = "legacy"
+url = "https://download.pytorch.org/whl/cu121"
+reference = "torch"
+
+[[package]]
+name = "torchvision"
+version = "0.17.0+cu121"
+description = "image and video datasets and models for torch deep learning"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "torchvision-0.17.0+cu121-cp310-cp310-linux_x86_64.whl", hash = "sha256:e1273e9862fc821febc4c716f13849b1ffa87c0d69f6ab824356c5532c490f08"},
+    {file = "torchvision-0.17.0+cu121-cp310-cp310-win_amd64.whl", hash = "sha256:b5ba1adc6f9f1a40af9608ebc447ceed6c8816dcb926d59675c81111b8676966"},
+    {file = "torchvision-0.17.0+cu121-cp311-cp311-linux_x86_64.whl", hash = "sha256:fd66c9554fc1448633c232eeddcbd90a9bcd135ae94e682f4cb721984974ca9b"},
+    {file = "torchvision-0.17.0+cu121-cp311-cp311-win_amd64.whl", hash = "sha256:307e52c2887c1d2b50cc3581cf5f4c169130b8352462e361e71eeda19e0dd263"},
+    {file = "torchvision-0.17.0+cu121-cp312-cp312-linux_x86_64.whl", hash = "sha256:c39ee5b3e832b88137e10b0f99e9d0b7c13fa73fc00e1469e8b88d8f657eb80e"},
+    {file = "torchvision-0.17.0+cu121-cp312-cp312-win_amd64.whl", hash = "sha256:ad2c7f7c317ed9ebe0ebe9dcf805393320a0fec81c7fdec95f971cdd8884518f"},
+    {file = "torchvision-0.17.0+cu121-cp38-cp38-linux_x86_64.whl", hash = "sha256:de5dbc480fcc100792e3aacf90edffe5bcee4ced3abc4fc1d210d2347fc36e05"},
+    {file = "torchvision-0.17.0+cu121-cp38-cp38-win_amd64.whl", hash = "sha256:1c58b331dc8a46bd378b6776a841d067f739c1699085d1387159e4aed4d0f088"},
+    {file = "torchvision-0.17.0+cu121-cp39-cp39-linux_x86_64.whl", hash = "sha256:bf50506b5870848e5cf0a57e6526b9d00cf4e7c69929491ba91fb9fc384abc38"},
+    {file = "torchvision-0.17.0+cu121-cp39-cp39-win_amd64.whl", hash = "sha256:8036fc7815025dab85bccef3ead1102afc3236e9b16c42c132402cbb06bc6afe"},
+]
+
+[package.dependencies]
+numpy = "*"
+pillow = ">=5.3.0,<8.3.dev0 || >=8.4.dev0"
+requests = "*"
+torch = "2.2.0"
+
+[package.extras]
+scipy = ["scipy"]
+
+[package.source]
+type = "legacy"
+url = "https://download.pytorch.org/whl/cu121"
+reference = "torch"
+
+[[package]]
 name = "tornado"
 version = "6.4"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
@@ -3872,13 +3932,13 @@ files = [
 
 [[package]]
 name = "urllib3"
-version = "2.2.0"
+version = "2.2.1"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "urllib3-2.2.0-py3-none-any.whl", hash = "sha256:ce3711610ddce217e6d113a2732fafad960a03fd0318c91faa79481e35c11224"},
-    {file = "urllib3-2.2.0.tar.gz", hash = "sha256:051d961ad0c62a94e50ecf1af379c3aba230c66c710493493560c0c223c49f20"},
+    {file = "urllib3-2.2.1-py3-none-any.whl", hash = "sha256:450b20ec296a467077128bff42b73080516e71b56ff59a60a02bef2232c4fa9d"},
+    {file = "urllib3-2.2.1.tar.gz", hash = "sha256:d0570876c61ab9e520d776c38acbbb5b05a776d3f9ff98a5c8fd5162a444cf19"},
 ]
 
 [package.extras]
@@ -3954,4 +4014,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "5c6a7293924e7c4d401142ca84741ef308ca3da9da5ebf26a1f10618caefc3f9"
+content-hash = "3e1e58022380857ef4a772246697e7856df4cbd5d9897f6a7a1336dd66da4901"
